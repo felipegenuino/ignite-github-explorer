@@ -15,3 +15,11 @@ yarn add style-loader css-loader -D
 yarn add node-sass sass-loader  -D
 
 yarn add -D @pmmmwh/react-refresh-webpack-plugin react-refresh
+
+yarn add typescript -D
+
+yarn tsc --init
+
+yarn add @babel/preset-typescript -D
+
+yarn add @types/react-dom -D
