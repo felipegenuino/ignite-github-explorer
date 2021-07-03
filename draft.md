@@ -23,3 +23,4 @@ yarn tsc --init
 yarn add @babel/preset-typescript -D
 
 yarn add @types/react-dom -D
+yarn add @types/react -D

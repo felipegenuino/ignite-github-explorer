@@ -4,16 +4,16 @@ import { useState, useEffect } from "react";
 
 //https://api.github.com/users/felipegenuino/repos
 
-const repository = {
-    name: 'unform',
-    description: 'Forms in React',
-    link: 'https://github.com/unform/unform'
+ 
+interface Repository {
+    name: string;
+    description: string;
+    html_url: string;
 }
 
 
-
 export function RepositoryList(){
-    const [repositories, setRepositories] = useState([]);
+    const [repositories, setRepositories] = useState<Repository[]>([]);
 
 //useEffect dispara uma ação quando algo acontece na minha aplicação
 // dependencias, é quando ela for alterada dispara o useEffect
@@ -30,7 +30,7 @@ useEffect( ()=> {
             <h1>Lista de repositórios</h1>
             <ul>
                 {repositories.map(repository => ( 
-                    <RepositoryItem key={repository.id} repository={repository} />
+                    <RepositoryItem key={repository.name} repository={repository} />
                 ))} 
             </ul>
         </section>
