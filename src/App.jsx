@@ -1,5 +1,12 @@
 import './styles/global.scss' 
 import { RepositoryList } from './components/RepositoryList' 
+import { Counter } from './components/Counter'
+import { Fragment } from 'react'
 export function App(){
-    return <RepositoryList />
+    return (
+    <Fragment>
+        <RepositoryList />
+        <Counter />
+    </Fragment>
+        )
 }
