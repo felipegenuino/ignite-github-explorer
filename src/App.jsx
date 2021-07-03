@@ -1,3 +1,4 @@
 export function App(){
-    return 'Fala pai'
+    throw new Error('Fail dev')
+    return <h1>Cara moleque</h1>
 }
